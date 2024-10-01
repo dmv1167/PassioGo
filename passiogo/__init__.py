@@ -686,8 +686,8 @@ class Stop:
 		if not etas:
 			return None
 
-		# Generally operates in O(1) as etas come sorted by API
-		return min(etas, key = lambda x : x[0])
+		#Etas come sorted from API
+		return etas[0]
 
 	def getEtas(
 			self,
